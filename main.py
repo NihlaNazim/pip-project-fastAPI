@@ -1,8 +1,8 @@
-from fastapi import fastapi
+from fastapi import FastAPI
 
 app = FastAPI()
 
 @app.get("/hello")
-def read_root():
+def read_hello():
     return {"message": "Hello, CI/CD World!"}
     
